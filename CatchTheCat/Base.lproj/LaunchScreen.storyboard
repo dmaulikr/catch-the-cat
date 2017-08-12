@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,19 +19,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="fBj-rk-Ziq">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="fBj-rk-Ziq">
                                 <rect key="frame" x="16" y="89" width="343" height="210"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Catch The Cat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyM-hY-aPK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catch The Cat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyM-hY-aPK">
                                 <rect key="frame" x="16" y="307" width="343" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="d17-HB-9IN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fBj-rk-Ziq" firstAttribute="trailing" secondItem="tyM-hY-aPK" secondAttribute="trailing" id="D0W-iK-ssb"/>
+                            <constraint firstItem="fBj-rk-Ziq" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="LLQ-iM-Pb8"/>
+                            <constraint firstItem="fBj-rk-Ziq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="69" id="T8v-85-Uhb"/>
+                            <constraint firstItem="fBj-rk-Ziq" firstAttribute="leading" secondItem="tyM-hY-aPK" secondAttribute="leading" id="fm5-aO-UMm"/>
+                            <constraint firstItem="tyM-hY-aPK" firstAttribute="top" secondItem="fBj-rk-Ziq" secondAttribute="bottom" constant="8" symbolic="YES" id="kPE-6g-xQs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tyM-hY-aPK" secondAttribute="bottom" constant="321" id="o2M-3e-5Xl"/>
+                            <constraint firstItem="fBj-rk-Ziq" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="rr5-0X-ruj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

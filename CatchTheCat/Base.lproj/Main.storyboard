@@ -70,30 +70,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qx-DR-VYc">
-                                <rect key="frame" x="16" y="42" width="343" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qx-DR-VYc">
+                                <rect key="frame" x="16" y="42" width="343" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgb-Wy-JZc">
-                                <rect key="frame" x="16" y="89" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgb-Wy-JZc">
+                                <rect key="frame" x="16" y="79" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Highest Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLB-CP-4Oq">
-                                <rect key="frame" x="16" y="606" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highest Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLB-CP-4Oq">
+                                <rect key="frame" x="16" y="609" width="343" height="18"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fbs-6F-36M">
-                                <rect key="frame" x="16" y="118" width="343" height="480"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fbs-6F-36M">
+                                <rect key="frame" x="16" y="118" width="343" height="483"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
@@ -104,6 +100,28 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vgb-Wy-JZc" firstAttribute="top" secondItem="1qx-DR-VYc" secondAttribute="bottom" constant="8" id="00Y-VF-6dK"/>
+                            <constraint firstItem="1qx-DR-VYc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="652-Nq-Y4p"/>
+                            <constraint firstItem="fbs-6F-36M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Iw5-gh-wwg"/>
+                            <constraint firstItem="fLB-CP-4Oq" firstAttribute="top" secondItem="fbs-6F-36M" secondAttribute="bottom" constant="8" id="Je1-14-jQR"/>
+                            <constraint firstItem="vgb-Wy-JZc" firstAttribute="top" secondItem="1qx-DR-VYc" secondAttribute="bottom" constant="8" id="WGB-Ds-hrB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fLB-CP-4Oq" secondAttribute="bottom" constant="40" id="Zas-qY-Zma"/>
+                            <constraint firstItem="fbs-6F-36M" firstAttribute="top" secondItem="vgb-Wy-JZc" secondAttribute="bottom" constant="18" id="akV-vD-bSR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fLB-CP-4Oq" secondAttribute="trailing" constant="16" id="cMI-cp-NzC"/>
+                            <constraint firstItem="fLB-CP-4Oq" firstAttribute="top" secondItem="fbs-6F-36M" secondAttribute="bottom" constant="8" id="cu5-aV-7t0"/>
+                            <constraint firstItem="fbs-6F-36M" firstAttribute="top" secondItem="vgb-Wy-JZc" secondAttribute="bottom" constant="18" id="ez6-3K-KtH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1qx-DR-VYc" secondAttribute="trailing" constant="16" id="fFQ-oA-TWf"/>
+                            <constraint firstItem="vgb-Wy-JZc" firstAttribute="top" secondItem="1qx-DR-VYc" secondAttribute="bottom" constant="8" id="giz-EI-67w"/>
+                            <constraint firstItem="1qx-DR-VYc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="qWi-KR-jNq"/>
+                            <constraint firstItem="1qx-DR-VYc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qho-N1-SVy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vgb-Wy-JZc" secondAttribute="trailing" constant="16" id="qny-1T-KHE"/>
+                            <constraint firstItem="1qx-DR-VYc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qt2-F3-3ee"/>
+                            <constraint firstItem="fLB-CP-4Oq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="r7T-Z2-UpL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fbs-6F-36M" secondAttribute="trailing" constant="16" id="x5f-IS-SUJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1qx-DR-VYc" secondAttribute="trailing" constant="16" id="xUl-uc-KMI"/>
+                            <constraint firstItem="vgb-Wy-JZc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ywI-du-hwt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
