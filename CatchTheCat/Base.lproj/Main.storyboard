@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3JJ-NX-McV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="xZl-0k-HF8">
+            <objects>
+                <viewController id="3JJ-NX-McV" customClass="HomeViewController" customModule="CatchTheCat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iGd-UX-XeJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="Tkq-X9-XIY">
+                                <rect key="frame" x="17" y="110" width="343" height="210"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catch The Cat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymX-0D-sQ5">
+                                <rect key="frame" x="17" y="328" width="343" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="RYW-W1-ICA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsn-Ww-gfk">
+                                <rect key="frame" x="17" y="395" width="343" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="ijY-Ku-hF6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="c6Z-Mf-AsX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tkq-X9-XIY" firstAttribute="leading" secondItem="rhw-sE-a8f" secondAttribute="leading" constant="17" id="3rh-ck-jtZ"/>
+                            <constraint firstItem="Tkq-X9-XIY" firstAttribute="leading" secondItem="ymX-0D-sQ5" secondAttribute="leading" id="EiE-gC-wSv"/>
+                            <constraint firstItem="rhw-sE-a8f" firstAttribute="bottom" secondItem="rsn-Ww-gfk" secondAttribute="bottom" constant="230" id="Qwe-cn-wGe"/>
+                            <constraint firstItem="Tkq-X9-XIY" firstAttribute="trailing" secondItem="ymX-0D-sQ5" secondAttribute="trailing" id="duu-Gx-nwa"/>
+                            <constraint firstItem="ymX-0D-sQ5" firstAttribute="trailing" secondItem="rsn-Ww-gfk" secondAttribute="trailing" id="eCV-ak-vNB"/>
+                            <constraint firstItem="rsn-Ww-gfk" firstAttribute="top" secondItem="ymX-0D-sQ5" secondAttribute="bottom" constant="28" id="eXB-KI-18B"/>
+                            <constraint firstItem="ymX-0D-sQ5" firstAttribute="top" secondItem="Tkq-X9-XIY" secondAttribute="bottom" constant="8" symbolic="YES" id="pwm-1C-LNh"/>
+                            <constraint firstItem="ymX-0D-sQ5" firstAttribute="leading" secondItem="rsn-Ww-gfk" secondAttribute="leading" id="t1V-ec-jgr"/>
+                            <constraint firstItem="rhw-sE-a8f" firstAttribute="trailing" secondItem="Tkq-X9-XIY" secondAttribute="trailing" constant="15" id="uPg-bh-ePS"/>
+                            <constraint firstItem="Tkq-X9-XIY" firstAttribute="top" secondItem="rhw-sE-a8f" secondAttribute="top" constant="90" id="zAr-rc-rfK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rhw-sE-a8f"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RrG-bF-vkK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-816.79999999999995" y="170.46476761619192"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CatchTheCat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1qx-DR-VYc">
+                                <rect key="frame" x="16" y="42" width="343" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgb-Wy-JZc">
+                                <rect key="frame" x="16" y="89" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Highest Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLB-CP-4Oq">
+                                <rect key="frame" x="16" y="606" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fbs-6F-36M">
+                                <rect key="frame" x="16" y="118" width="343" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="Mvb-GN-sfb">
+                                <rect key="frame" x="155" y="309" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="catBoundView" destination="fbs-6F-36M" id="hqu-ja-f4p"/>
+                        <outlet property="catImage" destination="Mvb-GN-sfb" id="5YC-dM-vst"/>
+                        <outlet property="highScoreLabel" destination="fLB-CP-4Oq" id="Gaf-GF-lKB"/>
+                        <outlet property="scoreLabel" destination="vgb-Wy-JZc" id="D9A-ej-Li3"/>
+                        <outlet property="timerLabel" destination="1qx-DR-VYc" id="ow4-dv-pzT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="170.46476761619192"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat" width="512" height="512"/>
+    </resources>
+</document>
